@@ -1,2 +1,3 @@
-1) Find the first non repeating element in a list.
+1) Find the first non repeating element in a list. (value and index)
+
 2) Implement a rock paper scissors solver (ex: [rock, paper, scissors] vs [paper, paper, rock])
