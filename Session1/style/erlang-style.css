@@ -1,0 +1,70 @@
+/* CIS 554 - 2010 Erlang */
+/* ------------- Colors ------------ */
+
+body, table.data {
+  background-color: #FFFFCC;
+}
+
+body {
+  background:url(../background.png);
+}
+
+p.mainHeader {
+  background-color: #FFCC66;
+  border-color:#FF9900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5A2000;
+}
+
+table.data th {
+  color:#5A2000;
+  background-color: #FFCC66;
+  border-color:#663300;
+  border-style:groove;
+}
+
+table.data td, code.multiline pre, pre code.multiline {
+  border-color: #663300; 
+}
+
+td.layout, table.layout {
+  border-color: #FFFFFF;
+}
+
+.definiendum {
+  font-style: italic;
+  color: #CC0000;
+}
+
+.important {
+    color: #C00;
+    font-weight: bold;
+}
+
+.comment {
+  color: #006600;
+}
+
+.header {
+  background-color:#FF7F00;
+  border-color:#FFCC00;
+}
+
+code.multiline pre, pre code.multiline {
+  background-color: #FFFFCC;
+}
+
+code, pre, pre code.multiline, .code, .program {
+  color: #0000CC;
+}
+
+code em, code i, em code, i code, .variable {
+  color: #CC0099;
+}
+
+.program {
+  color: #000066;
+  background-color:#F0FFCC;
+  border: #417904;
