@@ -1,8 +1,0 @@
-1) Find the first non repeating element in a list. (value and index)
-
-2) Implement a rock paper scissors solver function (ex: [rock, paper, scissors, paper...] vs [paper, paper, rock, rock...]).  
-   Should return winner and score
-
-3) Implement a matrix multiplication function. Try to make it multidimensional.
-
-

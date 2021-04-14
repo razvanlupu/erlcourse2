@@ -1,0 +1,34 @@
+ Debugging:
+ 
+	 Erlyberly:
+	 
+	 https://ie-confluence.vocalink.co.uk/display/TT/Erlyberly+on+MacBook
+	 cd erlyberly
+	 java -jar target/*runnable.jar
+	 erl -name user@acasa -remsh user@acasa (start a local shell remotely visible)
+	 run erlang:get_cookie().
+	 copy paste the full name (with @) and cookie and then get started
+	 * for debugging on AWS use erlyberly on windows (you should have Java and Erlang installed)
+	 * create if it does not exist already ~\Users\~\AppData\Roaming\_ssh\known_hosts and add the following:
+	 <IP> ips-database
+	 <IP> ips-node1 ips-node1-tch
+	 <IP> ips-node2 ips-node2-tch
+	 <IP> ips-node3 ips-node3-tch
+	 <IP> ips-node4 ips-node4-tch
+	 <IP> ips-simulator ips-simulator-tch	 
+	 
+	 Printing:
+		 -define(flog(Fmt, Args), begin
+		file:write_file("/tmp/flog.txt", lists:flatten(io_lib:format("~p/~p: " ++ Fmt, [?MODULE, ?LINE | Args])), [append])
+		end).
+
+		?flog("Message ~p ~n", [Variable])
+		
+		cat /tmp/flog.txt
+		
+	 Connecting to an AWS console using MobaXterm:
+	 Create a SSH session to connect to a switch node (that means, IP, private-key, existing machine)
+	 Once entering the session issue the following commands:
+		su - switch
+		priv/start-maintenance-console sw1 // for switch node 1
+		* you are now in an erlang console and have access to all modules *
